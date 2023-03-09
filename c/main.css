@@ -1,0 +1,65 @@
+  body {
+    text-align:center;
+  }
+  
+  section {
+    width: 100%;
+    margin: auto;
+  }
+
+  img {
+    margin: auto;
+  }
+  
+  .frame {
+    position:relative;
+    
+    margin: 1rem 0;
+  }
+
+  figure {
+    margin: auto;
+  }
+  
+  .slide {
+    display:block;
+    margin-bottom: 2rem;
+  }
+  
+  div {
+    text-align: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  
+  .current {
+    transition: opacity .5s ease-out;
+  }
+
+  .currenta {
+    transition: opacity .5s ease-out;
+  }
+
+
+  .controls {
+    margin: 1rem;
+    font-size: larger;
+    justify-content: space-around;
+  
+  }
+  
+  
+  .spacer {
+    padding: 2rem;
+  }
+
+  .back-btn {
+    float: left;
+  }
+
+  .next-btn {
+    float: right;
+  }

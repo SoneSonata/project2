@@ -47,9 +47,10 @@ function changeSlide(e) {
   }
     
     //shortcut vars
-    const frame = document.querySelector(".frame");
-    const slides = frame.querySelectorAll("img");
-    let showing = document.querySelector(".current");
+    const frame = document.querySelector(".gallery");
+    const album = frame.querySelector("div.currenta");
+    const slides = album.querySelectorAll("img");
+    let showing = album.querySelector(".current");
     let nextUp = "";
     let caption = document.getElementById('caption');
     let caption2 = document.getElementById('caption2');
@@ -58,9 +59,7 @@ function changeSlide(e) {
   
     if(!e || e.target.className == 'next-btn') {
       nextUp = showing.nextElementSibling;
-    }
-  
-    else {
+    } else if (e.target.className == "back-btn") {
       nextUp = showing.previousElementSibling;
     }
     

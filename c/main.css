@@ -34,6 +34,11 @@
     display: none;
   }
   
+  .albums-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
   
   .current {
     transition: opacity .5s ease-out;

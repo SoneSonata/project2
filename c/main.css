@@ -1,14 +1,53 @@
   body {
     text-align:center;
+    background-color: slategray;
+    background-image: url(../i/bgt10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
+  
   section {
-    width: 100%;
+    
     margin: auto;
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 10%;
+    padding: 1rem;
   }
 
   img {
     margin: auto;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 15px 0 black;
+  }
+
+  h1 {
+    font-size: 75px;
+    color: red;
+    text-shadow: 2px 2px black;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-top: 0;
+    text-shadow: 1px 1px white;
+  } 
+
+  nav a {
+    color: red;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.551);
+    padding: .5rem;
+    border-radius: 20%;
+  }
+
+  h3 {
+    font-size: 30px;
+    text-shadow: 1px 1px white;
   }
   
   .frame {
@@ -28,6 +67,7 @@
   
   div {
     text-align: center;
+    margin: 0;
   }
   
   .hide {
@@ -38,6 +78,18 @@
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+  }
+
+  #caption, #caption2, #caption3{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background: hsla(90deg, 0%, 0%, 0.7);
+    width: 75%;
+    padding: 0.7rem;
+    left:40px;
+    color: white;
+    font-size: 20px;
   }
   
   .current {
@@ -51,9 +103,6 @@
 
   .controls {
     margin: 1rem;
-    font-size: larger;
-    justify-content: space-around;
-  
   }
   
   
@@ -62,9 +111,73 @@
   }
 
   .back-btn {
-    float: left;
+    top: 400px;
+    left: 10px;
   }
 
   .next-btn {
-    float: right;
+    top: 400px;
+    right: 10px;
+  }
+
+  .controls a {
+    color: white;
+    background-color: black;
+    opacity: .5;
+    border-radius: 50%;
+    font-size: 50px;
+    padding: 1rem;
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    width: 50px;
+
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade {
+    animation: fade .8s linear;
+  }
+
+  .nojs {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .1rem;
+    width: 98vw;
+    height: auto;
+    margin: .1rem auto;
+    background-color: darkmagenta;
+  }
+
+  .nojs img {
+    max-height: 50%;
+    max-width: 50%;
+  }
+  
+
+  @media screen and (min-width: 800px) {
+    section {
+      width: 700px;
+    }
+
+    #caption, #caption2, #caption3 {
+      left: 80px;
+    }
+
+    .nojs figure {
+      margin: 0;
+      padding: 0;
+      width: 30vw;
+    }
   }

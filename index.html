@@ -9,17 +9,19 @@
 </head>
 <body>
     
-<h1>My top 10's</h1>
-<h2>(In no particular order)</h2>
-<nav class="albums-nav">
-  <ul>
-    <li><a href="#" class="a1">Shows</a></li>
-    <li><a href="#" class="a2">Video Games</a></li>
-    <li> <a href="#" class="a3">Podcasts</a></li>
-  </ul>
-</nav>
+<header>
+  <h1>My Top 10's</h1>
+  <h2>(In no particular order)</h2>
+  <nav class="albums-nav hide">
+    <ul>
+      <li><a href="#" class="a1">Shows</a></li>
+      <li><a href="#" class="a2">Video Games</a></li>
+      <li> <a href="#" class="a3">Podcasts</a></li>
+    </ul>
+  </nav>
+</header>
 
-<section class="gallery">
+<section class="gallery nojs">
    <div id="shows" class="album currenta">
     <h3>Shows</h3>
     <figure class="frame">
@@ -33,7 +35,7 @@
         <img class="slide" src="i/shows/show8.jpg" alt="South Park">
         <img class="slide" src="i/shows/show9.jpg" alt="The Mandalorian">
         <img class="slide" src="i/shows/show10.jpg" alt="Titans">
-        <figcaption id="caption">The Office</figcaption>
+        <figcaption id="caption" class="hide">The Office</figcaption>
     </figure>
   </div>
 
@@ -50,7 +52,7 @@
       <img class="slide" src="i/games/game8.jpg" alt="The Legend of Zelda: Ocarina of Time">
       <img class="slide" src="i/games/game9.jpg" alt="Kingdom Hearts 3">
       <img class="slide" src="i/games/game10.jpg" alt="Fallout New Vegas">
-      <figcaption id="caption2">The Legend of Zelda: Majora's Mask</figcaption>
+      <figcaption id="caption2" class="hide">The Legend of Zelda: Majora's Mask</figcaption>
     </figure>
   </div>
 
@@ -67,11 +69,11 @@
       <img class="slide" src="i/pc/pc8.jpg" alt="Odd Trails">
       <img class="slide" src="i/pc/pc9.jpg" alt="Ear Bisquits">
       <img class="slide" src="i/pc/pc10.jpg" alt="Rituals">
-      <figcaption id="caption3">Beach too Sand, Water too Wet</figcaption>
+      <figcaption id="caption3" class="hide">Beach too Sand, Water too Wet</figcaption>
     </figure>
   </div>
 
-  <div class="controls">
+  <div class="controls hide">
     <a href="#" class="back-btn">&#xab;</a>
     <a href="#" class="next-btn">&#xbb;</a>
   </div>

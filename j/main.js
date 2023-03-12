@@ -14,6 +14,10 @@ function init() {
   const showbutton = document.querySelector('.a1');
   const gamebutton = document.querySelector('.a2');
   const pcbutton = document.querySelector('.a3');
+  const controls = document.querySelector(".controls");
+  const captions = document.querySelectorAll("figcaption");
+  const nav = document.querySelector('nav');
+  const gallery = document.querySelector('section');
   
   //with JS active, hide all images
   slides.forEach((slide) => {
@@ -22,6 +26,13 @@ function init() {
   albums.forEach((album) => {
     album.classList.add("hide");
   });
+  captions.forEach((caption) => {
+    caption.classList.remove("hide");
+  })
+  gallery.classList.remove("nojs");
+  
+  controls.classList.remove("hide");
+  nav.classList.remove("hide");
   
   // show the first slide
   slides[0].classList.remove("hide");
@@ -87,6 +98,8 @@ function changeSlide(e) {
     caption.innerText = altText;
     caption2.innerText = altText;
     caption3.innerText = altText;
+
+    nextUp.classList.add("fade");
   }
 
 function changeAlbum(e) {
@@ -139,6 +152,7 @@ function changeAlbum(e) {
     nextAlbum.classList.add("currenta");
     firstImage.classList.remove("hide");
     firstImage.classList.add("current");
+    firstImage.classList.add("fade");
 
     let altText = firstImage.getAttribute('alt');
 
